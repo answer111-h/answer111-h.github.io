@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>隐私说明 · Rooman Titan Backup</title>
+  <style>
+    body {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-family: system-ui, sans-serif;
+      line-height: 1.8;
+      color: #202c3b;
+      background: #f5f7fa;
+    }
+    main { padding: 24px; background: white; border-radius: 12px; }
+    nav { margin-bottom: 24px; }
+    nav a { margin-right: 20px; }
+    a { color: #1854a1; }
+    h1 { line-height: 1.4; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="privacy.html">隐私说明</a>
+    <a href="terms.html">使用条款</a>
+  </nav>
+  <main>
+    <h1>隐私说明</h1>
+    <p>Rooman Titan Backup 是维护者本人使用的研究项目备份工具。自动备份仍在配置中，以下说明适用于计划启用的备份流程。</p>
+
+    <h2>处理哪些数据</h2>
+    <p>工具处理研究项目压缩包、备份校验清单、完成标记，以及相关文件的名称、大小、标识符和校验信息。工具使用 Google OAuth 授权令牌完成经授权的云盘操作，并保存必要的传输与核验结果。</p>
+
+    <h2>数据用途</h2>
+    <p>这些数据用于将本人 DigitalOcean 服务器上的项目备份保存到本人的 Google Drive、识别对应备份，并通过回读核验判断备份是否完整。数据不用于广告、出售或其他营销用途。</p>
+
+    <h2>访问范围</h2>
+    <p>工具使用 drive.file 权限，只访问应用创建或用户明确授权给应用的文件及其元数据。读取用于备份核验，写入用于保存备份及相关清单，不申请读取整个云盘的权限。</p>
+
+    <h2>保存与访问</h2>
+    <p>研究项目和本机备份保存在维护者的 DigitalOcean 服务器上；云端副本保存在维护者本人授权的 Google Drive 中。DigitalOcean 和 Google 分别承载相应服务器和云盘存储。</p>
+    <p>研究数据、研究项目代码和备份文件不通过本站公开发布。</p>
+    <p>工具的设计要求是将 OAuth 令牌单独保存在服务器的私密配置中，限制访问，不将令牌写入研究备份、公开页面或公开日志。</p>
+
+    <h2>撤销授权与删除</h2>
+    <p>使用者可以在 Google 账号的第三方应用访问设置中撤销授权。撤权后，工具无法继续依赖该授权访问 Google Drive，但撤权不会自动删除服务器或云盘中已有的备份。</p>
+    <p>备份保存期限由维护者本人管理。维护者可以手动删除服务器备份、云盘副本及不再需要的授权配置。不同位置的副本需要分别处理；云盘垃圾箱中的文件也可能需要另行清空。</p>
+
+    <h2>联系与更新</h2>
+    <p>有关数据处理或删除的问题，请联系 OAuth 授权页面显示的支持邮箱。若工具的数据用途、权限或保存方式改变，将同步更新本页说明。</p>
+  </main>
+</body>
+</html>
